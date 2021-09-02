@@ -14,14 +14,14 @@ class SiteContatoSeeder extends Seeder
      */
     public function run()
     {
-        // SiteContato::create([
-        //     'nome' => 'Sistema SG',
-        //     'telefone' => '(11) 957234497',
-        //     'email' => 'sistemasg@hotmail.com',
-        //     'motivo_contato' => 1,
-        //     'mensagem' => 'Olá, seja bem vindo ao nosso sistema!',
-        // ]);
+        SiteContato::create([
+            'nome' => 'Sistema SG',
+            'telefone' => '(11) 957234497',
+            'email' => 'sistemasg@hotmail.com',
+            'motivo_contatos_id' => 1,
+            'mensagem' => 'Olá, seja bem vindo ao nosso sistema!',
+        ]);
 
-        \App\Models\SiteContato::factory(100)->create();
+        // \App\Models\SiteContato::factory(100)->create();
     }
 }
